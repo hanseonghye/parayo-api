@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/myblog?useUnicode=true&characterEcoding=utf8&autoReconnect=true&useSSL=false
+    username: hans
+    password: tjdqls0826
+    data-username: hans
+    data-password: tjdqls0826
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hiernate:
+      ddl=auto: update
+    dataase-platform: org.hibernate.dialect.PostgreSQL95Dialect

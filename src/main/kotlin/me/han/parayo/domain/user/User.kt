@@ -3,7 +3,7 @@ package me.han.parayo.domain.user
 import java.util.*
 import javax.persistence.*
 
-@Entity(name = "user")
+@Entity(name = "users")
 class User(
     var email: String,
     var password: String,

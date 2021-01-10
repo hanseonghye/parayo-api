@@ -7,6 +7,6 @@ spring:
     data-password: tjdqls0826
     driver-class-name: org.postgresql.Driver
   jpa:
-    hiernate:
+    hibernate:
       ddl=auto: update
     dataase-platform: org.hibernate.dialect.PostgreSQL95Dialect

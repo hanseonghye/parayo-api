@@ -1,4 +1,4 @@
-package me.han.parayo.auth
+package me.han.parayo.domain.auth
 
 data class SigninResponse(
         val token: String,

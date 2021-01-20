@@ -1,4 +1,4 @@
-package me.han.parayo.auth
+package me.han.parayo.domain.auth
 
 import me.han.parayo.common.ParayoException
 import me.han.parayo.domain.user.User

@@ -1,8 +1,10 @@
-package me.han.parayo.auth
+package me.han.parayo.domain.auth
 
 import me.han.parayo.domain.user.UserRepository
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.stereotype.Service
 
+@Service
 class UserContextHolder @Autowired constructor(
         private val userRepository: UserRepository
 ) {

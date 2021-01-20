@@ -1,4 +1,4 @@
-package me.han.parayo.auth
+package me.han.parayo.domain.auth
 
 import com.auth0.jwt.JWT
 import com.auth0.jwt.algorithms.Algorithm
@@ -40,6 +40,11 @@ object JWTUtil {
                     .build()
                     .verify(token)
 
+    fun verifyRefresh(token: String): DecodedJWT =
+            JWT.require(refreshAlgorithm)
+                    .withIssuer(ISSUER)
+                    .build()
+                    .verify(token)
 
     fun extractEmail(jwt: DecodedJWT): String =
             jwt.getClaim(JWTClaims.EMAIL).asString()
